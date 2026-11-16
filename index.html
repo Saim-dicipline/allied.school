@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Allied School - Mian Ali Campus</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#102b50,#1d527d);
+  color: white;
+  line-height: 1.7;
+}
+
+header {
+  text-align: center;
+  padding: 35px 15px;
+  background: rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 36px;
+  color: #ffd76a;
+}
+
+header p {
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+button {
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #ffd76a;
+  color: #102b50;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: white;
+  transform: scale(1.04);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  background: rgba(255,255,255,0.09);
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+h2 {
+  color: #ffd76a;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #ffd76a;
+  margin-bottom: 8px;
+}
+
+.teacher {
+  padding: 18px;
+  margin: 15px 0;
+  background: rgba(0,0,0,0.15);
+  border-radius: 10px;
+}
+
+.result {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,0.4);
+  text-align: center;
+}
+
+th {
+  background: rgba(255,215,106,0.2);
+  color: #ffd76a;
+}
+
+.back {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: rgba(0,0,0,0.25);
+  margin-top: 30px;
+}
+
+@media(max-width:600px) {
+  header h1 { font-size: 27px; }
+  section { padding: 17px; }
+  th,td { padding: 8px 4px; font-size: 13px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>ALLIED SCHOOL</h1>
+  <h2>MIAN ALI CAMPUS</h2>
+  <p>Excellence • Discipline • Success</p>
+</header>
+
+<nav>
+  <button onclick="showResult('class9')">
+    9TH CLASS RESULTS
+  </button>
+
+  <button onclick="showResult('class10')">
+    10TH CLASS RESULTS
+  </button>
+</nav>
+
+<div class="container">
+
+<!-- HOME PAGE -->
+
+<div id="home">
+
+<section>
+  <h2>Welcome to Allied School</h2>
+  <p>
+    Welcome to Allied School Mian Ali Campus.
+    Our mission is to provide quality education,
+    develop confidence and build a successful
+    future for every student.
+  </p>
+</section>
+
+<section>
+  <h2>Our Director</h2>
+  <h3>Mian Awais</h3>
+  <p>
+    Under the leadership of our respected Director
+    Mian Awais, Allied School Mian Ali Campus is
+    committed to providing quality education,
+    discipline and a positive learning environment.
+    His vision is to help students achieve excellence
+    in education and in life.
+  </p>
+</section>
+
+<section>
+  <h2>Our Proud Teachers</h2>
+  <p>
+    Our dedicated teachers are the strength of
+    Allied School. Their hard work, guidance and
+    commitment help students achieve success.
+  </p>
+
+  <div class="teacher">
+    <h3>Sir Sufyan</h3>
+    <h4>Chemistry Teacher</h4>
+    <p>
+      One of the favourite teachers of our students!
+      Sir Sufyan makes Chemistry interesting and
+      easy to understand. His friendly nature,
+      excellent teaching style and dedication make
+      learning enjoyable for students.
+    </p>
+  </div>
+
+  <div class="teacher">
+    <h3>Sir Taseen</h3>
+    <h4>Mathematics Teacher</h4>
+    <p>
+      Sir Taseen teaches Mathematics with patience
+      and dedication. He explains difficult questions
+      step by step and helps students build confidence
+      in solving mathematical problems.
+    </p>
+  </div>
+
+  <div class="teacher">
+    <h3>Sir Nazaqat</h3>
+    <h4>Biology Teacher</h4>
+    <p>
+      Sir Nazaqat explains Biology topics in simple
+      and detailed ways. His guidance and commitment
+      help students improve their scientific knowledge
+      and understanding.
+    </p>
+  </div>
+
+  <div class="teacher">
+    <h3>Sir Raza</h3>
+    <h4>Physics Teacher</h4>
+    <p>
+      Sir Raza makes Physics easier through clear
+      explanations and practical examples. He
+      encourages students to think logically and
+      understand difficult concepts.
+    </p>
+  </div>
+</section>
+
+</div>
+
+<!-- CLASS 9 RESULT -->
+
+<div id="class9" class="result">
+<section>
+  <h2>🏆 9TH CLASS TOPPERS</h2>
+  <h3>Allied School Mian Ali Campus</h3>
+
+  <table>
+    <tr>
+      <th>Position</th>
+      <th>Student Name</th>
+      <th>Marks</th>
+    </tr>
+    <tr>
+      <td>1st</td>
+      <td>M. Saim</td>
+      <td>520</td>
+    </tr>
+    <tr>
+      <td>2nd</td>
+      <td>Murex</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>3rd</td>
+      <td>Faizan</td>
+      <td>491</td>
+    </tr>
+  </table>
+
+  <button class="back" onclick="goHome()">Back to Home</button>
+</section>
+</div>
+
+<!-- CLASS 10 RESULT -->
+
+<div id="class10" class="result">
+<section>
+  <h2>🏆 10TH CLASS TOPPERS</h2>
+  <h3>Allied School Mian Ali Campus</h3>
+
+  <p>
+    10th Class results will be announced soon.
+    Stay connected with Allied School for updates.
+  </p>
+
+  <button class="back" onclick="goHome()">Back to Home</button>
+</section>
+</div>
+
+</div>
+
+<footer>
+  <p>© 2026 Allied School Mian Ali Campus</p>
+  <p>Education is the key to success!</p>
+</footer>
+
+<script>
+function showResult(id) {
+  document.getElementById("home").style.display = "none";
+
+  document.querySelectorAll(".result").forEach(function(item) {
+    item.style.display = "none";
+  });
+
+  document.getElementById(id).style.display = "block";
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+function goHome() {
+  document.querySelectorAll(".result").forEach(function(item) {
+    item.style.display = "none";
+  });
+
+  document.getElementById("home").style.display = "block";
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+</script>
+
+</body>
+</html>
